@@ -3,9 +3,10 @@ build:
    commands:
    - echo Build started on `date`
    - mkdir dist
-   - cp index.html ./dist
+   - cp index.html ./dist/
+   - ls -la
 artifacts:
    files:
        - '**/*'
-   base-directory: 'dist*'
+   base-directory: 'dist'
    discard-paths: yes
