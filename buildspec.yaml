@@ -1,12 +1,13 @@
 version: 0.2
-build:
-   commands:
-   - echo Build started on `date`
-   - mkdir dist
-   - cp index.html ./dist/
-   - ls -la
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mkdir dist
+      - cp index.html ./dist/
+      - ls -la
 artifacts:
-   files:
-       - '**/*'
-   base-directory: 'dist'
-   discard-paths: yes
+  files:
+    - "**/*"
+  base-directory: "dist"
+  discard-paths: yes
