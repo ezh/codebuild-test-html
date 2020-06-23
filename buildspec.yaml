@@ -1,0 +1,13 @@
+version: 0.2
+env:
+   variables:
+build:
+   commands:
+   - echo Build started on `date`
+   - mkdir dist
+   - cp index.html ./dist
+artifacts:
+   files:
+       - '**/*'
+   base-directory: 'dist*'
+   discard-paths: yes
