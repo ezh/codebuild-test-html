@@ -11,3 +11,4 @@ artifacts:
     - dist/**/*
     - scripts/*
     - appspec.yml
+    - buildspec.yml
