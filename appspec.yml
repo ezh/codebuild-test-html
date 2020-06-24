@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /dist/index.html
-    destination: /var/www/html/index.html
+    destination: /usr/share/nginx/html/
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
